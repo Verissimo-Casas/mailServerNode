@@ -9,5 +9,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://github.com/Verissimo-Casas/mailServerNode#readme"
+  "homepage": "https://github.com/Verissimo-Casas/mailServerNode#readme",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
 }

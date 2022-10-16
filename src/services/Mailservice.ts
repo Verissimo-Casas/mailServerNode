@@ -16,7 +16,7 @@ type SendMailType = {
 
 class Mailservice {
   sendmail({ to, message }: SendMailType) {
-    console.log(`Email enviado para ${to.name} com assunto ${message.subject}, a message ${message.body}`);
+    return `Email enviado para ${to.name} com assunto ${message.subject}, a message ${message.body}`;
   }
 }
 

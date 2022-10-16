@@ -20,6 +20,7 @@ class UseController {
 
   create(request: Request<any, any, CreateUserBody>, response: Response){ // PayLoad 
     const { name, email } = request.body;
+    
 
     Mailservice.sendmail({
         to: {
@@ -27,16 +28,13 @@ class UseController {
           email
         },
         message: {
-          subject: "Welcome to Your Rax App",
+          subject: "",
           body: `Seja bem-vindo ${name} o seu email cadastrado e ${email}`
         }
       }
     );
 
-    return response.json({
-      name,
-      email
-    });
+    return response.send()
   }
 }
 
